@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h2>Forms</h2>
+<p>Form is used to collect user input. The user input is most often sent to a server for processing.</p>
+<p>For creating form using element &lt;form&gt;.</p>
+<p>&lt;form&gt; have some attribute like "action=" and "method=".</p>
+<p>Attribute "action=" defines the action to be performed when the form is submitted. Usually, the form data is sent to a file on the server when the user clicks on the submit button.</p>
+<p>The "method" attribute specifies the HTTP method to be used when submitting the form data. The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").</p>
+<h2>Input</h2>
+<p>For collecting user data using element &lt;input&gt;</p>
+<p>&lt;Input&gt; tag have some attributes: type, name and value, etc.</p>
+<p>Attribute "type" determine the type of information. It have several value: text, color, email, password, submit, etc.</p>
+<p>Attribute "name" specifies the name of input element</p>
+<p>Attribute "value" specifies the value of input element</p>
+<p>Attribute "placeholder" the same as value but dissapears when tried to fill the form</p>
+<p>Attribute "required" makes the field requiring to fill</p>
+<br>
+
+<form>
+  <input type="text" name="text" value="text">
+  <input type="email" name="email" placeholder="email" required>
+  <input type="password" name="password" value="" required>
+  <input type="submit" name="" value="submit">
+</form>
+<br>
+<h2>Label</h2>
+<p>&lt;label&gt; using for adding some description for &lt;input&gt; element.</p>
+<p>it can be lnked with attribute "id" in &lt;input&gt; element</p>
+<p>For example:</p>
+<code><p>&lt;form&gt;</p>
+<p><pre>   &lt;label for="fname"&gt;First name:&lt;/label&gt;</pre></p>
+<p><pre>   &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;</pre></p>
+<p><pre>   &lt;label for="lname"&gt;Last name:&lt;/label&gt;</pre></p>
+<p><pre>   &lt;input type="text" id="lname" name="lname"&gt;</pre></p>
+<p>&lt;/form&gt;</p></code>
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" name="fname" id="fname"><br>
+  <label for="lname">Last name:</label>
+  <input type="text" name="lname" id="lname">
+</form>
+<<a href="/index.html">Go to main menu</a>
+  </body>
+</html>
