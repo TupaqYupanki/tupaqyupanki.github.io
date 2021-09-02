@@ -44,6 +44,45 @@
   <label for="lname">Last name:</label>
   <input type="text" name="lname" id="lname">
 </form>
-<a href="/index.html">Go to main menu</a>
+<h2>Radio button</h2>
+<p>This is the type of &lt;inside&gt; element that can be used in some type of quiz</p>
+<p>If we want to choose one option from several determined variables we have to linked all the radio inputs together gives them same name</p>
+<p>&lt;label for="yes"&gt;Yes&lt;/label&gt;<br>
+&lt;input type="radio" id="yes" name="<b>pidor</b>" value="yes"&gt;<br>
+&lt;label for="no"&gt;No&lt;/label&gt;<br>
+&lt;input type="radio" id="no" name="<b>pidor</b>" value="no"&gt;<br>
+&lt;label for="doubt"&gt;Doubt&lt;/label&gt;<br>
+&lt;input type="radio" id="doubt" name="<b>pidor</b>" value="doubt"&gt;</p>
+<form method="get">
+<h4>Are you pidor?</h4>
+<label for="yes">Yes</label>
+<input type="radio" id="yes" name="pidor" value="yes">
+<label for="no">No</label>
+<input type="radio" id="no" name="pidor" value="no">
+<label for="doubt">Doubt</label>
+<input type="radio" id="doubt" name="pidor" value="doubt">
+<h2>Dropdwon menu</h2>
+<p>Anotrher way to choose from some dtermined variables is dropdown menu. It make with elements &lt;select&gt; and &lt;option&gt;</p>
+<p>The &lt;option&gt; tag have an attribute "value="</p>
+<code>
+  &lt;option value="jailbait"&gt;15&lt;/option&gt;<br>
+  &lt;option value="fit"&gt;20&lt;/option&gt;<br>
+  &lt;option value="too old"&gt;30&lt;/option&gt;
+</code>
+<h4>How old are you?</h4>
+<select name="age">
+  <option value="jailbait">15</option>
+  <option value="fit">20</option>
+  <option value="too old">30</option>
+</select>
+<br>
+<h2>Text area box</h2>
+<p>It can be made by &lt;input type="text"&gt; or with &lt;textarea name="" rows="" cols=""&gt;</p>
+<h3>Any feedback?</h3>
+<textarea name="feedback" rows="8" cols="80"></textarea><br>
+<input type="submit" name="" value="SUBMIT">
+</form>
+<br>
+<h3><a href="/index.html">Go to main menu</a></h3>
   </body>
 </html>
