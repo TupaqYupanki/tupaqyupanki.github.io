@@ -1,0 +1,24 @@
+body{
+  /* background-color: lightgray; */
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20190428/pngtree-bokeh-light-in-yellow-blue-gradient-background-image_104146.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+div{
+  background-color: #DBD21A;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: blue;
+}
+code{
+  font-style: italic;
+}
+p{
+  color: green;
+}
+span{
+  background-color: orange;
+  color: black;
+}
