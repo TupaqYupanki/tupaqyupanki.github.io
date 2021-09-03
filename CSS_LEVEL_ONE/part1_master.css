@@ -1,0 +1,12 @@
+h1{
+  color: blue;
+}
+code{
+  color: gray;
+}
+h4{
+  color: rgb(10,150,10);
+}
+li{
+  color: rgba(10,150,10,0.5)
+}
