@@ -1,0 +1,16 @@
+ul li{
+  color:red;
+}
+.topitems{
+  color: blue;
+}
+#two{
+  color: green;
+}
+.comments{
+  font-style: italic;
+}
+code{
+  font-weight: bold;
+  background-color: #d3d3d34d;
+}
