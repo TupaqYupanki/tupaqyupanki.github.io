@@ -13,7 +13,7 @@
 }
 code{
   font-weight: bold;
-  background-color: lightgray;
+  background-color: #d3d3d34d;
 }
 h3 + ul{
   border: 3px dotted purple;
