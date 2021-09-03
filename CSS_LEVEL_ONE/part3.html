@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS BASICS 3</title>
+    <link rel="stylesheet" href="part3_master.css">
+  </head>
+  <body>
+    <h2>Selectors</h2>
+    <p><a href="https://www.w3schools.com/cssref/css_selectors.asp">https://www.w3schools.com/cssref/css_selectors.asp</a></p>
+    <div class="comments">
+      <p>Class is the selector of some elements like <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;p&gt;</code>, etc.<br>
+      Class can be attached to multiple elements.<br>
+      In CSS it defines with dot before class name.<br>
+      Example:</p>
+    </div>
+      <code>&lt;div class="className"&gt;</code> - HTML code<br>
+      <code>.className{color: red;}</code> - CSS code<br><br>
+    <div class="comments"
+      <p>id is the unique selector. it attached to single element.<br>
+      ids defines with # symbol before id's name<br>
+      Example:</p>
+    </div>
+      <code>&lt;span id="idName"&gt;</code> - HTML code<br>
+      <code>#idName{color: red;}</code> - CSS code<br><br>
+    <div class="comments"
+      <p>Another selector is *. It's selector for every elements in the code.<br>
+      It's defines in CSS code like any parameters and override all the elements exept ids</p>
+    </div>
+    <h3>I'm a h3 heading</h3>
+    <div class="firstDiv">
+      <p>I'm inside the firstDiv class</p>
+    </div>
+    <div class="secondDiv">
+      <p>I'm inside the secondDiv class</p>
+    </div>
+    <p id="singledout">ids must be unique!</p>
+    <p id="singledout">some not unique paragraph</p>
+    <div class="comments">
+      <p>Another way to select element is relative pointer<br>
+      For example we can choose all type elements relative to tag <code>&lt;h3&gt;</code></p>
+      <code>h3 + ul{<br>
+      border: 3px dotted purple;<br>
+    }</code>
+      <p>So we select all unordered <code>&lt;ul&gt;</code> lists that goes after <code>&lt;h3&gt;</code> tag</p>
+    </div>
+    <h3>Here is a list</h3>
+    <ul>
+      <li>Confirm? <input type="checkbox" name="" value=""></li>
+      <li>Feedback? <input type="text" name="" value=""></li>
+      <li><a href="https://www.pieriandata.com">Pierian Data</a></li>
+      <li><a href="https://leprosorium.ru">leprosorium.ru</a></li>
+      <li><a href="https://www.npr.org">NPR</a></li>
+    </ul>
+    <div class="comments">
+      <p>There is a lot of relative selectors methods<br>
+        For example:</p>
+    </div>
+    <code>li a{color: green;}</code> - select all the links inside a list<br>
+    <code>li a[href="https://www.npr.org"]{color:red;}</code> - select specific link inside a list
+    <h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>

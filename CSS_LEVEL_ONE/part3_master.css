@@ -1,0 +1,22 @@
+.firstDiv{
+  color: blue;
+}
+.secondDiv{
+  color: red;
+}
+#singledout{
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.comments{
+  font-style: italic;
+}
+code{
+  font-weight: bold;
+  background-color: lightgray;
+}
+h3 + ul{
+  border: 3px dotted purple;
+}
+li a{color:green;}
+li a[href="https://www.npr.org"]{color:red;}
