@@ -1,6 +1,6 @@
-div {
+/* div {
     display: block;
-}
+} */
 .w3-boxmodel {
     margin: 30px 0;
     margin-top: 30px;
@@ -52,7 +52,7 @@ width: 100%;
 text-align: center;
 }
 .w3-boxmodel .border {
-    /* padding: 45px; */
+    padding: 45px;
     padding-top: 45px;
     padding-right: 45px;
     padding-bottom: 45px;
@@ -146,7 +146,7 @@ text-align: center;
     border-image-outset: initial;
     border-image-repeat: initial;
 }
-}
+
 .w3-boxmodel .content:before {
     content: "Content";
     font-size: 1.4em;
@@ -154,6 +154,7 @@ text-align: center;
     text-align: center;
     line-height: 3.5;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
