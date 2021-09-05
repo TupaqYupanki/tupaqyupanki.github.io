@@ -4,16 +4,30 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="part1_fonts.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet">
   </head>
   <body>
     <h2>Fonts</h2>
     <div class="comments">
+      Usefull links:<br>
+      <a href="https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows">Wiki_winOS_fonts</a><br>
+      <a href="https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOS">Wiki_macOS_fonts</a><br>
+      <a href="https://www.cssfontstack.com">www.cssfontstack.com</a><br>
+      <a href="https://fonts.google.com">fonts.google.com</a><br>
+      <a href="https://fontlibrary.org">fontlibrary.org</a>
       <p>For changing Fonts attribute use element <code>font</code>.<br>
         Propterty <code>Font</code> has many parameters like "size", "family", "style", etc.<br><br>
         <code>Font-size</code> have many value like "px", "%", "em". Two last is relative value.<br>
         <code>em</code> - is current font size. So we can set value relatively like <code>1.5em</code><br>
         So if we set the <code>body</code> font-size as 20px, <code>p</code> with font-size 1.5em will be equal 30px.<br><br>
-        <code>text-align</code> - the property that set horizontal alignment of a text.
+        <code>text-align</code> - the property that set horizontal alignment of a text.<br><br>
+        We can use not only buil-in OS fonts but use some remotely located fonts by linking it to ytour page.<br>
+        For example:<br>
+        <code>&lt;link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet"&gt;</code> code adding remotely font family named "Barrio"<br>
+        To use it you need to apply it in CSS with <code>font-family: 'Barrio', cursive;</code> parameter.
+
       </p>
     </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
