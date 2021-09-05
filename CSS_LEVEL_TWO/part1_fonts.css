@@ -1,0 +1,26 @@
+h1{
+  font-family: :"Arial";
+}
+
+p:not(div p){
+  font-family: monospace;
+  font-weight: bold;
+}
+
+body{
+  font-size: 20px;
+}
+
+.comments{
+  font-style: italic;
+}
+
+code{
+  font-weight: bold;
+  background-color: #d3d3d34d;
+}
+
+#two{
+  text-align: center;
+  font-weight: normal;
+}
