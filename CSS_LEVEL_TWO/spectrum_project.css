@@ -1,0 +1,54 @@
+.comments{
+  background: #8080801f;
+  font-size: 20px;
+  font-style: italic;
+}
+#fanky{
+  font-family: 'Allison', cursive;
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+table{
+  margin: auto;
+  width: 70%;
+}
+td{
+  padding: 50px;
+  align-items: center;
+}
+#one{
+  background-color: #FFCDB2;
+  padding: 50px;
+  padding-top: 400px;
+  border: 10px solid white;
+  text-align: center;
+}
+#two{
+  background-color: #FFB4A2;
+  padding: 50px;
+  padding-top: 400px;
+text-align: center;
+border: 10px solid white;
+}
+#three{
+  background-color: #E5989B;
+  padding: 50px;
+  padding-top: 400px;
+  text-align: center;
+  border: 10px solid white;
+}
+#four{
+  background-color: #B5838D;
+  padding: 50px;
+  padding-top: 400px;
+  text-align: center;
+  border: 10px solid white;
+}
+#five{
+  background-color: #6D6875;
+  padding: 50px;
+  padding-top: 400px;
+  text-align: center;
+  border: 10px solid white;
+}
