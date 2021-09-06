@@ -111,7 +111,7 @@ border: 2px dashed #bbb;
   text-align: center;
 }
 span.css{
-  background: #000000ba;
+  background: #414141;
   font-style: normal;
   font-weight: normal;
   color: white;
@@ -127,7 +127,7 @@ span.cssvalue{
   color: #d29f61;
 }
 span.html{
-  background: #000000ba;
+  background: #414141;
   font-style: normal;
   font-weight: normal;
   color: white;
@@ -148,6 +148,6 @@ span.htmlvalue{
   color: #c7ff7c;
 }
 div.code1{
-  background: #000000ba;
+  background: #414141;
   width: 15%;
 }
