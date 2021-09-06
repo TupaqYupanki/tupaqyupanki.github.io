@@ -1,11 +1,8 @@
 body{
   box-sizing: border-box;
 }
-div{
-  display: block;
-}
-.test{
-  position: absolute;
+.box{
+  /* position: absolute; */
   width: 60%
 }
 .margin{
@@ -98,4 +95,64 @@ border: 2px dashed #bbb;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+.comments{
+  background: #8080801f;
+  font-size: 20px;
+  font-style: italic;
+}
+#top{
+  border: 4px solid blue;
+  width: 25%;
+}
+#bottom{
+  border: 4px solid red;
+  width: 70%;
+  text-align: center;
+}
+span.css{
+  background: black;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+}
+span.cssid{
+  background: black;
+  font-style: normal;
+  font-weight: normal;
+  color: #3db1e8;
+}
+span.cssvalue{
+  background: black;
+  font-style: normal;
+  font-weight: normal;
+  color: #d29f61;
+}
+span.html{
+  background: black;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+}
+span.htmlelement{
+  background: black;
+  font-style: normal;
+  font-weight: normal;
+  color: #f77676;
+}
+span.htmlid{
+  background: black;
+  font-style: normal;
+  font-weight: normal;
+  color: #3db1e8;
+}
+span.htmlvalue{
+  background: black;
+  font-style: normal;
+  font-weight: normal;
+  color: #c7ff7c;
+}
+div.code1{
+  background: black;
+  width: 15%;
 }

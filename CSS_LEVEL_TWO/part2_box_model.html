@@ -7,9 +7,9 @@
   </head>
   <body>
     <div class="comments">
-      The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+      The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:<br><br>
     </div>
-<div class='test'>
+<div class='box'>
       <div class="margin">
         <div class="border w3-theme">
           <div class="padding">
@@ -18,6 +18,29 @@
         </div>
       </div>
 </div>
+<div class="comments">
+  We can set the width of element with <span class='css'>width</span> parameter.<br>
+  For example:<br>
+<div class='code1'>
+  <span class='html'>&lt;<span class="htmlelement">h1</span> <span class="htmlid">id</span>=<span class="htmlvalue">'top'</span>&gt;TOP&lt;/<span class="htmlelement">h1</span>&gt;</span><br><br>
+  <span class='css'>
+    #<span class='cssid'>top</span>{<br>
+      border: <span class='cssvalue'>4px</span> solid <span class='cssvalue'>blue</span>;<br>
+      width: <span class="cssvalue">25%</span>;<br>
+    }<br>
+  </span>
+</div><br>
+  Another thing we can do is align the text with parameter <span class='css'>text-align</span>:
+  <br>
+  <div class="code1">
+
+
+  <span class="html">&lt;<span class='htmlelement'>h2</span> <span class="htmlid">id</span>=<span class="htmlvalue">'bottom'</span>&gt;BOTTOM&lt;/<span class='htmlelement'>h2</span>&gt;</span><br><br>
+  <span class="css">#<span class="cssid">bottom</span>{<br>text-align: center;<br>}</span>
+  </div>
+</div>
+<h2 id='top'>TOP</h1>
+<h2 id='bottom'>BOTTOM</h1>
 
 <h3><a href="/">Go to main menu</a></h3>
 
