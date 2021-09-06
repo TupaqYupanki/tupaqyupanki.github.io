@@ -1,84 +1,62 @@
-/* div {
-    display: block;
-} */
-.w3-boxmodel {
-    margin: 30px 0;
-    margin-top: 30px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
+html{
+  box-sizing: border-box;
 }
-.w3-boxmodel .margin {
+div{
+  display: block;
+}
+.test{
+  position: absolute;
+  width: 60%
+}
+.margin{
+  align: left;
+  width: 100%;
   background: #f1f1f1;
-padding: 45px;
-    padding-top: 45px;
-    padding-right: 45px;
-    padding-bottom: 45px;
-    padding-left: 45px;
+  border: 2px dashed #bbb;
+  padding: 45px;
+padding-top: 45px;
+padding-right: 45px;
+padding-bottom: 45px;
+padding-left: 45px;
+position: relative;
+display: inherit;
+}
+.margin:before{
+  content: "Margin";
+      font-size: 1.4em;
+      position: absolute;
+      /* right: 1%; */
+      left: 0;
+      top: 1.8%;
+      width: 100%;
+      text-align: center;
+}
+
+.border{
+  padding: 45px;
+padding-top: 45px;
+padding-right: 45px;
+padding-bottom: 45px;
+padding-left: 45px;
 width: 100%;
 height: 100%;
 position: relative;
-border: 2px dashed #bbb;;
-border-top-color: rgb(187, 187, 187);
-    border-top-style: dashed;
-    border-top-width: 2px;
-    border-right-color: rgb(187, 187, 187);
-    border-right-style: dashed;
-    border-right-width: 2px;
-    border-bottom-color: rgb(187, 187, 187);
-    border-bottom-style: dashed;
-    border-bottom-width: 2px;
-    border-left-color: rgb(187, 187, 187);
-    border-left-style: dashed;
-    border-left-width: 2px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-transition: all .25s ease-in-out;
-transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
+background-color: #04AA6D;
 }
-.w3-boxmodel .margin:before{
-  content: "Margin";
-font-size: 1.4em;
-position: absolute;
-left: 0;
-top: 1.8%;
-width: 100%;
-text-align: center;
-}
-.w3-boxmodel .border {
-    padding: 45px;
-    padding-top: 45px;
-    padding-right: 45px;
-    padding-bottom: 45px;
-    padding-left: 45px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.w3-theme {
-    color: #fff !important;
-    background-color: #73AD21 !important;
-    background-color: #04AA6D !important;
-}
-.w3-boxmodel .border:before {
-    content: "Border";
+.border:before{
+  content: "Border";
     font-size: 1.4em;
     color: black;
     position: absolute;
+    /* right: 1%; */
     left: 0;
     top: 2.5%;
     width: 100%;
     text-align: center;
 }
-.w3-boxmodel .padding {
-    color: black;
-    padding: 45px;
+
+.padding{
+  padding: 45px;
     padding-top: 45px;
     padding-right: 45px;
     padding-bottom: 45px;
@@ -87,74 +65,37 @@ text-align: center;
     height: 100%;
     position: relative;
     background: #f1f1f1;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(241, 241, 241);
 }
-.w3-boxmodel .padding:before {
+.padding:before {
     content: "Padding";
     font-size: 1.4em;
     position: absolute;
+    /* right: 0.5%; */
     left: 0.5%;
     top: 3.7%;
     width: 100%;
     text-align: center;
 }
-.w3-boxmodel .content {
-    padding: 20px;
-    padding-top: 20px;
+
+.content{
+  padding: 20px;
+  padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: white;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: white;
-    border: 2px dashed #bbb;
-    border-top-color: rgb(187, 187, 187);
-    border-top-style: dashed;
-    border-top-width: 2px;
-    border-right-color: rgb(187, 187, 187);
-    border-right-style: dashed;
-    border-right-width: 2px;
-    border-bottom-color: rgb(187, 187, 187);
-    border-bottom-style: dashed;
-    border-bottom-width: 2px;
-    border-left-color: rgb(187, 187, 187);
-    border-left-style: dashed;
-    border-left-width: 2px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
+width: 100%;
+height: 100%;
+position: relative;
+background: white;
+border: 2px dashed #bbb;
 }
-
-.w3-boxmodel .content:before {
+.content:before {
     content: "Content";
     font-size: 1.4em;
     display: block;
     text-align: center;
     line-height: 3.5;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
