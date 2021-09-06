@@ -1,0 +1,13 @@
+body{
+  text-align: center;
+  background-color: #130023;
+  color: white;
+  font-size: 30px;
+  border: 50px solid #4caf80;
+  border-top: 0px;
+  font-family: 'Glory', sans-serif;
+}
+#main{
+  margin-right: 70%;
+  color: white;
+}

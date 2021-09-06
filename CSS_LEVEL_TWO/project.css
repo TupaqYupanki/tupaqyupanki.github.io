@@ -1,0 +1,36 @@
+body{
+text-align: center;
+background-color: #130023;
+color: white;
+font-size: 30px;
+border: 100px solid #4caf80;
+border-top: 0px;
+font-family: 'Glory', sans-serif;
+margin: auto;
+}
+p{
+  width: 70%;
+  margin: auto;
+  padding: 50px 0px 50px 0px;
+}
+form{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+input{
+  height: 40px;
+  width: 400px;
+}
+#submit{
+  height: 80px;
+  width: 150px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #ff9800;
+  border-radius: 15px;
+}
+#main{
+  margin-right: 70%;
+  color: white;
+}
