@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <body>
+    <h2>Grid</h2>
+<div class="comments">
+  <p>The grid system is a technology for scaling content for different size of display.
+  The main idea is row class with columns that divided in depend of display size.
+  It have 12 basic columns that can be divided on 6 columns with doubled size or 4 columns trippled size etc.</p>
+</div>
+    <style>
+      .md-1{
+        background: #b3ddff;
+        border: 2px solid black;
+        font-weight: bold;
+      }
+    </style>
+    <style>
+      .md-2{
+        background: #ff0000a8;
+        border: 2px solid black;
+        font-weight: bold;
+      }
+    </style>
+    <style>
+      .md-3{
+        background: #008000a3;
+        border: 2px solid black;
+        font-weight: bold;
+      }
+    </style>
+    <style>
+      .md-4{
+        background: yellow;
+        border: 2px solid black;
+        font-weight: bold;
+      }
+    </style>
+    <style>
+      .md-6{
+        background: #8000809e;
+        border: 2px solid black;
+        font-weight: bold;
+      }
+    </style>
+    <style>
+      .comments{
+        background: #8080801f;
+        font-size: 20px;
+        font-style: italic;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    </style>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+        <div class="col-md-1 md-1">col-md-1</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 md-2">col-md-2</div>
+        <div class="col-md-2 md-2">col-md-2</div>
+        <div class="col-md-2 md-2">col-md-2</div>
+        <div class="col-md-2 md-2">col-md-2</div>
+        <div class="col-md-2 md-2">col-md-2</div>
+        <div class="col-md-2 md-2">col-md-2</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 md-3">col-md-3</div>
+        <div class="col-md-3 md-3">col-md-3</div>
+        <div class="col-md-3 md-3">col-md-3</div>
+        <div class="col-md-3 md-3">col-md-3</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 md-4">col-md-4</div>
+        <div class="col-md-4 md-4">col-md-4</div>
+        <div class="col-md-4 md-4">col-md-4</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 md-6">col-md-6</div>
+        <div class="col-md-6 md-6">col-md-6</div>
+      </div>
+    </div><br>
+<div class="comments">
+  <p>In Bootstrap presents 5 types of classes:</p>
+</div>
+<div class="container">
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th></th>
+      <th class="text-center">
+        Extra small<br>
+        <small>&lt;576px</small>
+      </th>
+      <th class="text-center">
+        Small<br>
+        <small>≥576px</small>
+      </th>
+      <th class="text-center">
+        Medium<br>
+        <small>≥768px</small>
+      </th>
+      <th class="text-center">
+        Large<br>
+        <small>≥992px</small>
+      </th>
+      <th class="text-center">
+        Extra large<br>
+        <small>≥1200px</small>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="text-nowrap" scope="row">Max container width</th>
+      <td>None (auto)</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Class prefix</th>
+      <td><code>.col-</code></td>
+      <td><code>.col-sm-</code></td>
+      <td><code>.col-md-</code></td>
+      <td><code>.col-lg-</code></td>
+      <td><code>.col-xl-</code></td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row"># of columns</th>
+      <td colspan="5">12</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Gutter width</th>
+      <td colspan="5">30px (15px on each side of a column)</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Nestable</th>
+      <td colspan="5">Yes</td>
+    </tr>
+    <tr>
+      <th class="text-nowrap" scope="row">Column ordering</th>
+      <td colspan="5">Yes</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="comments">
+  <p>Containers can be nested:</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 md-4">top 1
+        <div class="row">
+          <div class="col-md-6 md-6">nested 1</div>
+          <div class="col-md-6 md-6">nested 2</div>
+          <div class="col-md-6 md-6">nested 3</div>
+          <div class="col-md-6 md-6">nested 4</div>
+        </div>
+    </div>
+    <div class="col-md-4 md-4">top 2</div>
+  </div>
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
