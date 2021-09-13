@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src='part7.js'></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>For Loops</h1>
+    <div class='comment'>
+    <p>JS has three types of For Loops:</p>
+    <ul>
+      <li>For - loops through a number of times</li>
+      <li>For/In - loops through a JS object</li>
+      <li>For/of - used with arrays</li>
+    </ul>
+for (statement1; statement2; statement3){<br>
+// Execute some code<br>
+}
+<ol>
+  <li>statement1 is executed before the loop starts</li>
+  <li>statement2 defines the condition for running loop</li>
+  <li>statement3 is executed each time after the loop cycles through</li>
+</ol>
+  </div>
+<h2>EXAMPLES:</h2>
+<div class="code1">
+  for (var i = 0; i < 5; i++) {<br>
+    console.log("Number is "+i);<br>
+    }
+</div><br>
+<div class="code1">
+  var word = "lsfjeiovls"<br><br>
+  for (var i = 0; i < word.length; i++) {<br>
+    console.log(word[i]);<br>
+  }
+</div><br><br>
+<style>
+  #exercise{
+    width:40%;
+  }
+</style>
+<div id=exercise class="code1">
+  /// PART 8 - LOOP EXERCISES<br>
+  // Before we continue on with your project, let's practice some loops!<br>
+  // You'll have just two problems, but you'll need to use each loop type we learned about to solve them!
+<br>
+<br>
+  ///////////////////<br>
+  //// PROBLEM 1 ///<br>
+  /////////////////<br>
+<br>
+  // Use a For Loop to print (console.log()) out the word "hello" 5 times.<br>
+  //<br>
+  // Do this with a While Loop and a For Loop<br>
+<br>
+  // While Loop<br>
+  var x = 0;<br>
+  while (x<5) {<br>
+    console.log("hello");<br>
+    x++;<br>
+  }<br>
+<br>
+  // For Loop<br>
+<br>
+  for (var i = 0; i < 5; i++) {<br>
+    console.log("ehlo");<br>
+  }<br><br>
+  /////////////////<br>
+  // PROBLEM 2 ///<br>
+  ///////////////<br>
+<br>
+  // Use Loops to console.log() (print out) all the odd numbers from 1 to 25<br>
+  // Do this using two methods, a while loop and a for loop<br><br>
+
+  // METHOD ONE<br>
+  // While Loop<br>
+  var z = 1;<br>
+  while (z<=25) {<br>
+    if (z%2!=0) {<br>
+      console.log("z = "+z);<br>
+    }<br>
+    z++;<br>
+  }<br>
+<br>
+  // METHOD TWO<br>
+  // For Loop<br>
+  for (var i = 1; i <= 25; i++) {<br>
+    if (i%2==0){}<br>
+      else {console.log("i = "+i);}<br>
+    }
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
