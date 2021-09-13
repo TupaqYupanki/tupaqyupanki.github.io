@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src='part1.js'></script>
+  </head>
+  <body>
+<h1>FUNCTIONS</h1>
+<div class="comment">
+  <p>Functions allows us reuse part of code</p>
+  <p>The general syntax for a JS function is:</p>
+</div>
+<div class="code1">
+  function name(parameter1, parameter2){<br>
+  //Code to be executed<br>
+}
+</div><br>
+Examples:<br>
+<div class="code1">
+  function hello(){<br>
+    console.log("hello  world!");<br>
+  }
+</div><br>
+<div class="code1">
+  function helloYou(name){<br>
+    console.log("hello "+name);<br>
+  }
+</div><br>
+<div class="code1">
+  function addNum(num1, num2){<br>
+    console.log(num1+num2);<br>
+  }
+</div>
+<p class='comment'>We can predifines the parameter of function</p>
+<div class="code1">
+  function helloYou(name='Frankie'){
+    console.log("hello "+name);
+  }
+</div>
+<p class='comment'>To return result of the function we can use operate "return"</p>
+<div class="code1">
+  function formal(name='Sam', title='Sir'){
+    return(title+' '+name);
+  }<br><br>
+  function timesFive(numInput) {<br>
+    return result = numInput * 5;<br>
+  }<br>
+  <br>
+  > timeFive(10)<br>
+  < 50
+</div>
+<p class="comment">All defined variables inside function are limited of this function and doesn't exist outside the function</p>
+<p class='comment'>So we have to scopes - global (outside the function) and local (inside the function). We can work and change global variables in our function but it didn't changes globaly.</p>
+<style>
+  #moar{
+    width:40%;
+  }
+</style>
+<div id='moar' class="code1">
+  var x = "global x"<br>
+   function fun(x){<br>
+     x = "reassigned x"<br>
+     console.log('this is reassigned x inside function: '+x);<br>
+   }<br>
+   console.log('this is global: '+x);<br>
+   fun();<br>
+   console.log('global x is uncnhanged: '+x);<br><br>
+   < this is global: global x<br>
+< this is reassigned x inside function: reassigned x<br>
+< global x is uncnhanged: global x
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
