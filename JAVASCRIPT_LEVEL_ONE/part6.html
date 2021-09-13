@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src='part6.js'></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<h1>While Loop</h1>
+<p class='comment'>whlie(condition){<br>
+//Execute some code while this condition is true<br>
+}</p>
+<h2>EXAMPLES:</h2>
+<div class="code1">
+  var x = 0;<br><br>
+  while(x < 5){<br>
+    console.log("x is currently: "+x+"\nStill less than 5");<br>
+    x = x+1;<br>
+  }
+</div>
+<p class='comment'>If we need to stop the loop we can use operator "break"</p>
+<div class="code1">
+  var y = 0;<br>
+  while(y < 5){<br>
+    console.log("y is currently: "+y);<br>
+    if (y===3){<br>
+      console.log("y is equal to three");<br>
+      break;<br>
+    }<br>
+    console.log("y i still less than 5, adding 1 to y");<br>
+    y = y+1;<br>
+  }
+</div>
+<p class='comment'>This code print in console only even numbers from 1 to 10</p>
+<div class="code1">
+  var z = 0;<br>
+  while(z<=10){<br>
+    if (z>0 && z%2 === 0)<br>
+    console.log("z = "+z);<br>
+    z = z+1;<br>
+  }
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Booleans</h2>
+    <h3>Comparison operation</h3>
+    <p><strong>Greater Than</strong></p>
+    <div class='code1'>
+    <span class='jsnum'>3</span> <span class = 'jsvar'>></span> <span class='jsnum'>2</span>;<br>
+    <span class='jsnum'>2</span> <span class = 'jsvar'>></span> <span class='jsnum'>3</span>;
+  </div>
+    <p><strong>Less Than</strong></p>
+    <div class="code1">
+    <span class='jsnum'>1</span> <span class = 'jsvar'><</span> <span class='jsnum'>2</span>;<br>
+  </div>
+    <p><strong>Greater than or equal to</strong></p>
+    <div class="code1">
+    <span class='jsnum'>1</span> <span class = 'jsvar'><=</span> <span class='jsnum'>3</span>;
+</div>
+    <p><strong>Equality</strong></p>
+    <div class="code1">
+    <span class='jsnum'>2</span> <span class = 'jsvar'>==</span> <span class='jsnum'>2</span>;<br>
+    <span class ='jsvalue'>"name"</span> <span class = 'jsvar'>==</span> <span class ='jsvalue'>"name"</span>
+</div>
+    <p><strong>Inequality</strong> </p>
+    <div class="code1">
+    <span class='jsnum'>2</span> <span class = 'jsvar'>!=</span> <span class='jsnum'>3</span>;
+    </div>
+<p class="comment">If tried to compare two elements with different types JS will compare it like one type. But if we need to compare elements considering the type we have to add another equal operator<br>
+For example:</p>
+<div class = 'code1'>
+    > <span class="jsnum">3</span> <span class='jsvar'>==</span> <span class='jsvalue'>"3"</span>;<br>
+    < <span class='jsnum'>true</span><br><br>
+    > <span class='jsnum'>3</span> <span class='jsvar'>===</span> <span class='jsvalue'>"3"</span>;<br>
+    < <span class='jsnum'>false</span>
+</div>
+<h2>Logical operators</h2>
+<h4>AND is written with &&</h4>
+<p class='comment'>Need both conditions to be true to return true</p>
+<div class="code1">
+  > <span class='jsnum'>1</span> <span class='jsvar'>==</span> <span class='jsnum'>1</span> <span class='jsvar'>&&</span> <span class='jsnum'>2</span> <span class='jsvar'>==</span> <span class='jsnum'>2</span>;<br>
+  < <span class='jsnum'>true</span>
+</div>
+<h4>OR is written with ||</h4>
+<p class='comment'>Need only one condition to be treu to return true</p>
+<div class="code1">
+  > <span class='jsnum'>3</span> <span class='jsvar'>==</span> <span class='jsnum'>1</span> <span class='jsvar'>||</span> <span class='jsnum'>2</span> <span class='jsvar'>==</span> <span class='jsnum'>2</span>;<br>
+  < <span class='jsnum'>true</span>
+</div>
+<h4>NOT is written with !</h4>
+<div class="code1">
+  > (<span class='jsnum'>3</span> <span class='jsvar'>==</span> <span class='jsnum'>1</span>);<br>
+  < <span class='jsnum'>false</span><br><br>
+  > !(<span class='jsnum'>3</span> <span class='jsvar'>==</span> <span class='jsnum'>1</span>);<br>
+  < <span class='jsnum'>true</span>
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>

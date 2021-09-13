@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="part5.js"></script>
+  </head>
+  <body>
+<h1>Control Flow</h1>
+<h2>IF statement</h2>
+<p class='comment'>This statement compare conditions and if result true execute some code</p>
+<div class="code1">
+  if (x > 0){<br>
+    z = x**2;<br>
+  }
+</div>
+<h2>IF ELSE statement</h2>
+<p class='comment'>This statement compare conditions and if result true execute some code else execute some other</p>
+<div class="code1">
+  if (x > 0){<br>
+    z = x**2;<br>
+  }else{<br>
+    z = z+x;<br>
+  }
+</div>
+<h2>IF, ELSE IF, ELSE statement</h2>
+<div class="code1">
+  if (x > 0){<br>
+    z = x**2;<br>
+  }else if(z != 0){<br>
+    z = z+x;<br>
+  }
+</div>
+<h2>EXAMPLES</h2>
+<div class="code1">
+  temp = prompt("Set the temperature")<br><br>
+    if (temp>80){<br>
+    alert("temp = "+temp+"\nHot!")<br>
+  }else if(temp <= 80 && temp >= 50){<br>
+    alert("temp = "+temp+"\nAverage")<br>
+  }else if (temp < 50 && temp >= 32){<br>
+    alert("temp = "+temp+"\nCold")<br>
+  }else {<br>
+    alert("temp ="+temp+"\nVery cold")<br>
+  }
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
