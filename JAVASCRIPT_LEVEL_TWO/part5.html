@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src='part5.js'></script>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <p class='comment'>In JS Object is a dictionary. Unlike the arrow it didn't have any order inside. You can access to values through their key.<br>
+      The general syntax for object is:</p>
+      <div class="code1">
+        {key1: 'value one', key2: 'value two'}
+      </div>
+      <p class='comment'>Useful link - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object</a><br>
+      Examples:</p>
+<div class="code1">
+  var carInfo = {make:'Toyota', year:1990, model:'Camry'}
+</div>
+<p class='comment'>Keep in mind that "key" didn't have quotes when you defines it in object. But when you need to access to value with the key you have to add quotes in your request.</p>
+<div class="code1">
+  > carInfo<br>
+  < {make: 'Toyota', year: 1990, model: 'Camry'}<br><br>
+  > carInfo['year']<br>
+  < 1990
+</div><br>
+<div class="code1">
+  var myNewO = {a:'hello', b:[1,2,3], c:{inside:['a','b']}};<br><br>
+  > myNewO<br>
+  < {a: 'hello', b: Array(3), c: Object}<br><br>
+  > myNewO['a']<br>
+  < 'hello'<br>
+  > myNewO['b']<br>
+  < (3) [1, 2, 3]<br>
+  > myNewO['b'][0]<br>
+  < 1<br>
+  > myNewO['c']['inside'][1]<br>
+  < 'b'
+</div>
+<p class='comment'>To change some value just use <strong>objectName['key1'] = 'newValue'</strong></p>
+<div class="code1">
+  carInfo['year'] = 2006;
+</div>
+<p class='comment'>To show at browser the Object you can use <b>console.dir(carInfo)</b></p>
+<div class="code1">
+  for (i in carInfo){<br>
+    console.log(i);<br>
+    console.log(carInfo[i]);<br>
+  }
+</div>
+
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
