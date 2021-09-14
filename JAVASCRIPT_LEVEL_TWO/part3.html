@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src='part3.js'></script>
+  </head>
+  <body>
+<h1>Arrays</h1>
+<p class='comment'>Arrays allow us to store various basic data types in a sequence and get them by index while it need</p>
+<p class='comment'>The general syntax for array is:</p>
+<div class="code1">
+  var arrayName = ['var1', 'var2', 'var3']<br><br>
+  > arrayName[0]<br>
+  < 'var1'
+</div>
+<p class='comment'>We can change value of array's item:</p>
+<div class="code1">
+  arrayName[2] = "var4";<br><br>
+  > arrayName<br>
+  < ['var1', 'var2', 'var4']
+</div>
+<p class='comment'>Remember that we can change value of array but not string. Arrays are mutable, string - not.</p>
+<div class="code1">
+  var stringName = 'Hello World!';<br>
+  > stringName[0]<br>
+  < 'H'<br><br>
+  stringName[0] = 'Y';<br>
+  > stringName[0]<br>
+  < 'H'
+</div>
+<p class="comment">To receive length of array use method arrayName.length</p>
+<div class="code1">
+  > arrayName.length<br>
+  < 3
+</div>
+<p class="comment">Other methods you can find at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#</a></p>
+<p class='comment'>To add or remove items use <strong>.push()</strong> and <strong>.pop()</strong> methods</p>
+<div class="code1">
+  var myArr = ['one', 'two', 'three']<br>
+  var lastItem = myArr.pop()<br><br>
+  > lastItem<br>
+  < 'three'<br>
+  > myArr<br>
+  < ['one', 'two']<br><br>
+  myArr.push('new_item')<br>
+  > myArr<br>
+  < ['one', 'two', 'new_item']
+</div>
+<p class="comment">We can did matrix with nested arrays. Arrays inside the array.</p>
+<div class="code1">
+  var matrix = [[1,2,3], [4,5,6],[7,8,9]]<br>
+  > matrix<br>
+  < [Array(3), Array(3), Array(3)]<br><br>
+  > matrix[1][0]<br>
+  < 4
+</div>
+<p class='comment'>Array iteration</p>
+<div class="code1">
+  var arr = ['A', 'B', 'C'];<br>
+  for (var i = 0; i < arr.length; i++) {<br>
+    console.log(arr[i]);<br>
+  }
+</div><br>
+<div class="code1">
+  for (letter of arr){<br>
+    console.log(letter);<br>
+  }
+</div>
+<p class='comment'>We can use method <strong>.forEach</strong> instead <strong>for</strong></p>
+<div class="code1">
+  for (letter of arr){<br>
+  alert(letter)}<br><br>
+  arr.forEach(alert)
+</div>
+<p class='comment'>More examples:</p>
+<div class="code1">
+  function addAwesome(name){<br>
+    console.log(name+' is awesome!');<br>
+  }<br><br>
+  var topics = ['python', 'django', 'science']<br><br>
+  > topics.forEach(addAwesome)<br>
+  < python is awesome!<br>
+  < django is awesome!<br>
+  < science is awesome!
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
