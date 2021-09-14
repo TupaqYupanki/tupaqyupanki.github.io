@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src='part6.js'></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Objects Exercise</h1>
+<pre>
+    ////////////////////
+    // PROBLEM 1 //////
+    //////////////////
+
+    // Given the object:</pre>
+    <div class="code1">
+    var employee = {<br>
+      name: "John Smith",<br>
+      job: "Programmer",<br>
+      age: 31<br>
+    }</div>
+<pre>
+    // Add a method called nameLength that prints out the
+    // length of the employees name to the console.
+
+
+    ///////////////////
+    // PROBLEM 2 /////
+    /////////////////
+
+    // Given the object:</pre>
+    <div class="code1">
+    var employee = {<br>
+      name: "John Smith",<br>
+      job: "Programmer",<br>
+      age: 31<br>
+    }</div>
+<pre>
+    // Write program that will create an Alert in the browser of each of the
+    // object's values for the key value pairs. For example, it should alert:
+
+    // Name is John Smith, Job is Programmer, Age is 31.
+
+
+
+    ///////////////////
+    // PROBLEM 3 /////
+    /////////////////
+
+    // Given the object:</pre>
+    <div class="code1">
+    var employee = {<br>
+      name: "John Smith",<br>
+      job: "Programmer",<br>
+      age: 31<br>
+    }</div>
+<pre>
+    // Add a method called lastName that prints
+    // out the employee's last name to the console.
+
+    // You will need to figure out how to split a string to an array.
+    // Hint: http://www.w3schools.com/jsref/jsref_split.asp
+</pre>
+<h2>My solution:</h2>
+<div class="code1">
+  var employee = {<br>
+    name: "John Smith",<br>
+    job: "Programmer",<br>
+    age: 31,<br>
+    nameLength: function(){<br>
+      console.log("The nameLength of employee = "+this.name.length);<br>
+    },<br>
+    myAlert: function(){<br>
+      var temp = 'temp';<br>
+      while (temp!='quit') {<br>
+        temp = prompt('Choose what information you need: name, job or age. To exit type quit')<br>
+        if (temp==='name') {<br>
+          alert('Name is '+this.name)<br>
+        }else if (temp==='job'){<br>
+          alert('Job is '+this.job)<br>
+        }else if (temp==='age') {<br>
+          alert('Age is '+this.age)<br>
+        }else{temp==='quit'}<br>
+      }<br>
+    },<br>
+    lastName: function(){<br>
+      console.log(this.name.split(' ')[1]);<br>
+    }<br>
+  }
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>

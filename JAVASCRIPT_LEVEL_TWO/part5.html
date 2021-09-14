@@ -49,7 +49,57 @@
     console.log(carInfo[i]);<br>
   }
 </div>
-
+<h1>Object methods</h1>
+<p class='comment'>Object methods are functions that are inside of an Object</p>
+<div class="code1">
+    var carInfo = {<br>
+      make:'Toyota',<br>
+      year:1990,<br>
+      model:'Camry',<br>
+      carAlert: function(){alert("We've got a car here!")}
+    }
+</div>
+<p class="comment">To call this method use syntax <strong>carInfo.carAlert()</strong>
+<br>
+Another way to call the function is using keyword <strong>this</strong>.<br>
+<strong>This</strong> keyword set to the object the method is called on. So <b>this</b> is acting as a reference to the actual object.
+</p>
+<div class="code1">
+  var myObj = {<br>
+    protp: 37,<br>
+    reportProt: function() {<br>
+      return this.prop;<br>
+    }<br>
+  }
+</div>
+<br>
+<div class="code1">
+  var simple = {<br>
+    prop: "Hello",<br>
+    myMethod: function(){<br>
+      console.log("The myMethod was called");<br>
+    }<br>
+  }
+</div>
+<p class="comment">To calling function we need to add () at the end of function</p>
+<div class="code1">
+  > simple.myMethod<br>
+  < ƒunction (){<br>
+    console.log("The myMethod was called");<br>
+  }<br><br>
+  > simple.myMethod()<br>
+  < The myMethod was called
+</div><br>
+<div class="code1">
+  var myNeyObj = {<br>
+    name: "Jose",<br>
+    greet: function(){<br>
+      console.log("Hello " + this.name);<br>
+    }<br>
+  }<br><br>
+  > myNeyObj.greet()<br>
+  < Hello Jose
+</div>
 <h3><a href="/">Go to main menu</a></h3>
   </body>
 </html>
