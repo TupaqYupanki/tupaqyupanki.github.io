@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>АКВАДИСКОТЕКА</h1>
+<p class=comment>In this example we show how interact with some elements using JS using DOM</p>
+<p>At the first we grap the element h1 using DOM method <b>document.querySelector("h1")</b></p>
+<div class="code1">
+  var header = document.querySelector("h1")
+</div>
+<p>Next we creater some function that will randomly generate hash color</p>
+<div class="code1">
+  function getRandomColor(){<br>
+  var letters = "0123456789ABCDEF";<br>
+  var color = '#';<br>
+  for (var i = 0; i < 6; i++) {<br>
+    color += letters[Math.floor(Math.random()*16)];<br>
+  }<br>
+  return color<br>
+}
+</div>
+<p>The next we create function that will change property of tag h1 using DOM method <b>.style.color</b></p>
+<div class="code1">
+  function changeHeaderColor(){<br>
+  colorInput = getRandomColor()<br>
+  header.style.color = colorInput;<br>
+}
+</div>
+<p>The last thing is apply changes over interval in ms</p>
+<div class="code1">
+  setInterval("changeHeaderColor()",500);
+</div>
+  <h3><a href="/">Go to main menu</a></h3>
+  </body>
+  <script src='part2.js'></script>
+</html>
