@@ -16,7 +16,7 @@ console.log('d = '+d);
 x1 = ((Math.sqrt(d))-b)/(2*a)
 
 console.log(typeof(x1));
-x2 = (-1*(Math.sqrt(d))-b)/(2*a)
+x2 = (-1*((Math.sqrt(d)))-b)/(2*a)
 console.log(x2);
 
   alert("X1 = "+x1+'\n'+"X2 = "+x2)
