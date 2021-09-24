@@ -1,23 +1,20 @@
-var a = prompt("Введите значение А")
-var b = prompt("Введите значение B")
-var c = prompt("Введите значение C")
+var x = prompt("Введите значение А")
+var y = prompt("Введите значение B")
+var z = prompt("Введите значение C")
 
-function square(a,b,c){
+function square(x,y,z){
+  a = Number(x)
+  b = Number(y)
+  c = Number(z)
 
-  if(parseInt(a)==NaN || parseInt(b)==NaN || parseInt(c)==NaN){
-  // console.log(typeof(a));
-  // console.log(typeof(b));
-  // console.log(typeof(c));
+if(isNaN(a) || isNaN(b) || isNaN(c)){
   console.log('Введите число');
-  }
-
-a = Number(a)
-b = Number(b)
-c = Number(c)
-
-
+}
+if(x=='' || y=='' || z==''){
+  console.log('Вы ввели пустое значение');
+}else{
 d = b*b - (4*a*c)
-
+console.log(d);
 if((d < 0) || (a == 0)){
   alert('Вещественных корней нет')
 }else
@@ -27,4 +24,5 @@ x2 = (-1*((Math.sqrt(d)))-b)/(2*a)
   alert("X1 = "+x1+'\n'+"X2 = "+x2)
 }
 }
-square(a,b,c);
+}
+square(x,y,z);
