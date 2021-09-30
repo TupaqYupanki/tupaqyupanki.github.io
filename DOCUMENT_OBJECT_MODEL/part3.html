@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Let's talk about changing text, html content, and attributes with the DOM</h1>
+    <ul>
+  <li>myvariable.textContent - This returns just the text</li>
+  <li>myvariable.innerHTML - This returns the actual html</li>
+  <li>myvariable.getAttribute() - This returns the original attribute</li>
+  <li>myvariable.setAttribute() - This allowed you to set an attribute</li>
+</ul>
+<h4 id="special">I am another <em>header</em> with the special id.
+  <a href="https://www.facebook.com">FACEBOOK LINK</a>
+</h4>
+<p class="comment">We can change value of any object DOM</p>
+<div class="code1">
+  > var special = document.querySelector("#special")<br>
+
+  > special<br>
+  < &lt;h4 id="special"&gt;...&lt;/h4&gt;<br><br>
+  > var specialA = special.querySelector('a')<br>
+  > special A<br>
+  < &lt;a href="https://www.facebook.com"&gt;FACEBOOK LINK&lt;/a&gt;<br><br>
+  > specialA.getAttribute("href")<br>
+  < 'https://www.facebook.com'<br><br>
+  > specialA.setAttribute("href","https://idiod.leprosorium.ru")<br><br>
+  > specialA.getAttribute("href")<br>
+  < "https://idiod.leprosorium.ru"
+
+</div>
+<p class=comment>Look at the <a href="JAVASCRIPT_LEVEL_ONE/basic.html">basic.html</a> when we change the color of numbers in the first example of code</p>
+
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
