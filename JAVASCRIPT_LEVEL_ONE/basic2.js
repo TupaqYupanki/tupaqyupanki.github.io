@@ -8,7 +8,7 @@ var newelement = ''
 if (xxx == 0){
 for (i in element.innerHTML){
   if (i == 0){
-    for (x in cipher)
+    for (x in cipher) // можно заменить на (typeof i === 'number');
       if (element.innerHTML[i] == cipher[x]){
         newelement = '<font color="red">'+element.innerHTML[i]+'</font>'
       } else if (x == cipher.length-1){
