@@ -29,7 +29,7 @@ var employee = {
     console.log(this.name.split(' ')[1]);
   }
 }
-
+employee.myAlert()
 // Add a method called nameLength that prints out the
 // length of the employees name to the console.
 
