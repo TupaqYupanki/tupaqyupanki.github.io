@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Interact with DOM on events</h1>
+<p class=comment>We can interact with elemtns of DOM with JavaScript throug Event Listener.<br>
+  The JavaScript will be "lisening" for an event to occur and then execute a function whtn it happens.</p>
+For example:
+<div class="code1">
+  var myvariable.querySelector('h1')<br>
+  myvariable.addEventListner('click', myFunction(){<br>
+  })
+</div>
+<p class='comment'>There are many possible events:
+<ul>
+  <li>Clicks</li>
+  <li>Hovers</li>
+  <li>Double Clicks</li>
+  <li>Drags</li>
+  <li>...</li>
+</ul>
+<a href="https://developer.mozilla.org/en-US/docs/Web/Events">More events</a>
+</p>
+<h3 id='one'>HOVER EXAMPLE</h3>
+<div class="code1">
+  var headOne = document.querySelector('#one')<br>
+  <br>
+  headOne.addEventListener('mouseover', function(){<br>
+    headOne.textContent = "Mouse Currently Over";<br>
+    headOne.style.color = 'red';<br>
+  })<br>
+  <br>
+  headOne.addEventListener('mouseout', function(){<br>
+    headOne.textContent = 'Hover example';<br>
+    headOne.style.color = 'black';<br>
+  })
+</div>
+
+<h3 id='two'>CLICK EXAMPLE</h3>
+<div class="code1">
+  var headTwo = document.querySelector('#two')<br>
+  <br>
+  headTwo.addEventListener('click', function(){<br>
+    headTwo.textContent = 'CLICKED ON'<br>
+    headTwo.style.color = 'blue'<br>
+  }<br>
+  )
+</div>
+
+<h3 id='three'>DOUBLE CLICK EXAMPLE</h3>
+<div class="code1">
+  var headThree = document.querySelector('#three')<br>
+  <br>
+  headThre.addEventListener('dblclick', function(){<br>
+    headThree.textContent = 'I WAS DOUBLE CLICKED!'<br>
+    headThree.style.color = 'green'<br>
+  }<br>
+  )
+ </div>
+<script src=part4.js></script>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
