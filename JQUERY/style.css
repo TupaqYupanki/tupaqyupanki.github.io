@@ -1,0 +1,13 @@
+.comment{
+  background: #8080801f;
+  font-size: 20px;
+  font-style: italic;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.code1{
+  background: #414141;
+  width: 20%;
+  color: white;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>jQuery</title>
+
+    <style>
+      .turnBlue{
+        color:white;
+        background: blue;
+      }
+      .turnRed{
+        color:white;
+        background: red;
+      }
+    </style>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+    <h1>Selecting with jQuery</h1>
+    <p>You can use the $ sign to select elements from the DOM!
+      It will feel a lot like selecting using querySelectorAll().
+    </p>
+    <p>For example:</p>
+    <ul>
+      <li>Selecting all a tags:</li>
+      <ul>
+        <li>$('a')</li>
+      </ul>
+      <li>Selecting all elements from the class "container"</li>
+      <ul>
+        <li>$(".container")</li>
+      </ul>
+      <li>Selecting all elements with id "special"</li>
+      <ul>
+        <li id="special">$("#special")</li>
+      </ul>
+    </ul>
+    <h2>Here are some inputs</h2>
+    <h3>Later on we will use jQuery to interact with them!</h3>
+
+    <input type="text" name="" value="Enter Your Name">
+    <input type="submit" name="" value="Submit">
+    </div>
+    <br>
+<p class="comment">To connect jQuery to your page got to <a href="https://code.jquery.com">https://code.jquery.com</a>
+</p>
+<p class='comment'>To choose some element using jQuery use simbol $<br>
+For example:</p>
+<div class="code1">
+  > $('h1')
+  < [h1]
+</div>
+<p class='comment'>To change some paramaters of element choose method and change parameters:</p>
+<div class="code1">
+  var x = $('h1')<br>
+  x.css('color','red')<br>
+  x.css('bacground','blue')
+</div>
+<p class='comment'>We can create JS object with CSS parameters and then apply it to element:</p>
+<div class="code1">
+  var newCSS = {<br>
+    'color':'white',<br>
+    'background':'green',<br>
+    'border':'2px solid red'<br>
+  }<br><br>
+  var y = $('li')<br>
+  y.css(newCSS)
+</div>
+<p>To choose particular element from list use method "eq":</p>
+<div class="code1">
+  var y = $('li')<br>
+  y.eq(0).css('color','orange')<br>
+  y.eq(-1).css('background','yellow')<br>
+  y.eq(-1).css('color', 'black')
+</div>
+<p>To grab text of element use method ".text"</p>
+<div class="code1">
+  > $('h1').text('NEW TEXT')<br>
+  > $('h1').html()<br>
+  < "NEW TEXT"
+</div>
+<p class='comment'>With jQuery we can change attribute of element:</p>
+<div class="code1" style='width:50%'>
+  $('input').eq(1).attr('type','chekbox') &nbsp;&nbsp;&nbsp;//choose second element of 'input' and change attribute 'type' for button<br>
+  $('input').eq(0).val('new value') &nbsp;&nbsp;&nbsp;//choose the first element of 'input and change 'value'
+</div>
+<p>If we want to add or remove predifined class of CSS we need method '.addClass' or '.removeClass' of jQuery:</p>
+<div class="code1">
+  > $('h2').addClass('turnRed')<br>
+  < [h1.turnRed]<br>
+  > $('h2').removeClass('turnRed')<br>
+  < [h1]
+</div>
+<p class='comment'>Another option of adding or removing class method '.toggleClass'</p>
+<div class="code1">
+  > $('h2').toggleClass('turnRed')<br>
+  < [h2.turnRed]<br>
+  > $('h2').toggleClass('turnRed')<br>
+  < [h2]
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+<script src='part1.js'></script>
+  </body>
+</html>
