@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+
+    <style>
+      .turnBlue{
+        color:white;
+        background: blue;
+      }
+      .turnRed{
+        color:white;
+        background: red;
+      }
+    </style>
+
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+
+
+    <h1>Selecting with jQuery</h1>
+    <p>You can use the $ sign to select elements from the DOM!
+      It will feel a lot like selecting using querySelectorAll().
+    </p>
+    <p>For example:</p>
+    <ul>
+      <li>Selecting all a tags:</li>
+      <ul>
+        <li>$('a')</li>
+      </ul>
+      <li>Selecting all elements from the class "container"</li>
+      <ul>
+        <li>$(".container")</li>
+      </ul>
+      <li>Selecting all elements with id "special"</li>
+      <ul>
+        <li id="special">$("#special")</li>
+      </ul>
+    </ul>
+    <h2>Here are some inputs</h2>
+    <h3>Later on we will use jQuery to interact with them!</h3>
+
+    <input type="text" name="" value="Enter Your Name">
+    <input type="submit" name="" value="Submit">
+    </div>
+    <h2 class='comment'>jQuery events</h2>
+    .click() example
+    <div class="code1">
+      $('h1').click(function(){<br>
+        console.log('Ther was a click!');<br>
+      })
+    </div>
+    another example:
+    <div class="code1">
+      $('h2').click(function(){<br>
+        $(this).text("I was changed")<br>
+      })
+    </div>
+    <p class='comment'>In this example we use function eq() of jQuery that takes numbers as argument and goes to the element in list of elements. Than we use function keypress() that take as argument some action</p>
+    <div class="code1">
+      $('input').eq(0).keypress(function(){<br>
+        $('h3').toggleClass('turnBlue')<br>
+      })
+    </div>
+    <p class='comment'>In the next example we using special keyword "event" that contains list of attrimutes with information about actions on the page</p>
+    <div class="code1">
+      $('input').eq(0).keypress(function(event){<br>
+        console.log(event);<br>
+      })
+    </div>
+    <p class='comment'>event.which contain number code of key that was pressed. For example number code '13' is 'enter' keyboard</p>
+    <div class="code1">
+      $('input').eq(0).keypress(function(event){<br>
+        if (event.which === 13) {<br>
+          $('h3').toggleClass('turnRed')<br>
+        }<br>
+      })
+    </div>
+    <p class='comment'>Another option of interaction is method on()</p>
+    <div class="code1">
+      $('h1').on('dblclick',function(){<br>
+        $(this).toggleClass('turnBLue');<br>
+      })
+    </div>
+    <p class='comment'>Example with 'mouseenter' for 'li'</p>
+    <div class="code1">
+      $('li').on('mouseenter',function(){<br>
+        $(this).toggleClass('turnRed');<br>
+      })
+    </div>
+    <p class='comment'>Animation in jQuery <a href="https://api.jquery.com/animate/">https://api.jquery.com/animate/</a></p>
+    <div class="code1">
+      $('input').eq(1).on('click',function(){<br>
+        $('.container').fadeOut(3000) //3000 - numer of ms after fadeout<br>
+      })
+    </div>
+    <h3><a href="/">Go to main menu</a></h3>
+<script src='part2.js'></script>
+  </body>
+</html>
