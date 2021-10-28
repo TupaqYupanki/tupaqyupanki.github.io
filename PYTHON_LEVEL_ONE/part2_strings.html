@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    To go to specific character of string use mystring[x], where 'x' is serial number of character
+    <div class="code1">
+>>> mystring = 'abcdefg'<br>
+>>> print(mystring[3])<br>
+d
+</div>
+<br>
+<h2>Slicing</h2>
+Here are 3 parameters of slicing: the begining of the slice, the end and step size.<br>
+<div class='code1'>
+  >>> mystring = 'abcdef'<br>
+  >>> print(mystring[2:])<br>
+  cdef<br><br>
+  >>> print(mystring[:3])<br>
+  abc<br><br>
+  >>> print(mystring[2:5])<br>
+  cde<br><br>
+  >>> print(mystring[::2])<br>
+  ace
+</div>
+<br>
+<strong>Python strings are immutable!</strong><br>
+So you can't change some character in a string.<br><br>
+Strings have a lot of methods. Here is the most useful one <strong>.split()</strong>
+<div class="code1">
+  >>> mystring = 'Hello World!'<br>
+  >>> print(mystring.split('e'))<br>
+  ['H', 'llo World!']
+</div><br>
+We can insert another string to string with method <strong>.format()</strong>
+<div class="code1">
+>>> x = 'Item One: {} Item Two: {}'.format('dog', 'cat')<br>
+>>> print(x)<br>
+Item One: dog Item Two: cat<br><br>
+>>> x = 'Item One: {x} Item Two: {y}'.format(x='dog', y='cat')<br>
+>>> print(x)<br>
+Item One: dog Item Two: cat<br><br>
+>>> x = 'Item One: {y} Item Two: {x}'.format(x='dog', y='cat')<br>
+>>> print(x)<br>
+Item One: cat Item Two: dog
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>

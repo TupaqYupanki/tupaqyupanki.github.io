@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+To create a List you need to create some item with <strong>[]</strong>
+<div class="code1">
+>>> mylist = [1,2,3]<br>
+>>> mylist<br>
+[1,2,3]
+</div>
+<br>
+The first method of lists is <strong>len()</strong> method. It gives us the number of elements in the list.
+<div class="code1">
+  >>> mylist = [1,2,3]<br>
+  >>> len(mylist)<br>
+  3
+</div><br>
+We can get the element from the list similarly like in strings with <strong>mylist[x]</strong>
+<div class="code1">
+  >>> mylist = ['a','b','c']<br>
+  >>> mylist[1]<br>
+  a
+</div><br>
+<strong>Unlike a string list's items are mutable</strong>
+<div class="code1">
+  >>> mylist = [1,2,3]<br>
+  >>> mylist[0] = 'new item'<br>
+  >>> mylist<br>
+  ['new item',2,3]
+</div><br>
+To append new item to the list use method <strong>.append()</strong>
+<div class="code1">
+  >>> mylist = ['a','b','c']<br>
+  >>> mylist.append('new item')<br>
+  >>> mylist<br>
+  ['a','b','c','new item']
+</div><br>
+If we want to add items from another list use method <strong>.extend()</strong>
+<div class="code1">
+>>> mylist = ['a','b','c']<br>
+>>> mysecondlist = ['d','e','f']<br>
+>>> mylist.extend(mysecondlist)<br>
+>>> mylist<br>
+['a','b','c','d','e','f']
+</div><br>
+One of the weay to get item from list is <strong>.pop()</strong> method. It get the last item from the list.
+<div class="code1">
+>>> mylist = ['a','b','c','d']<br>
+>>> x = mylist.pop()<br>
+>>> mylist<br>
+['a','b','c']<br>
+>>> x<br>
+d
+</div><br>
+If we want get item by the number use .pop(x), where 'x' is number of item.
+<br>
+<<div class="code1">
+>>> matrix = [[1,2,3],[4,5,6],[7,8,9]]<br>
+>>> first_col = [row[0] for row in matrix]<br>
+[1,4,7]
+<h3><a href="/">Go to main menu</a></h3>
+</div>
+
+  </body>
+</html>
