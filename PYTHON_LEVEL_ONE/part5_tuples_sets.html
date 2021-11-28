@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<strong>Tuples</strong> are set of elements like list but it immutable.<br>
+To create tuples use round brackets <strong>( )</strong>
+<div class="code1">
+  tup = (1,2,3)<br>
+  list = [1,2,3]<br>
+  print tup<br>
+  print list<br>
+  (1,2,3)<br>
+  [1,2,3]<br><br>
+  >>> list[0] = 'x'<br>
+  >>> tup[0] = 'x'<br>
+  Traceback (most recent call last):<br>
+    File "&lt;stdin&gt;", line 1, in &lt;module&gt;<br>
+  TypeError: 'tuple' object does not support item assignment<br><br>
+  >>> tup<br>
+  (1,2,3)<br>
+  >>> list<br>
+  ['x', 2, 3]
+</div><br>
+
+<strong>Sets</strong> are unordered collections of <strong>unique</strong> elements.
+<div class="code1">
+  >>> x = set()<br>
+  >>> x.add(1)<br>
+  >>> x.add(2)<br>
+  >>> print(x)<br>
+  {1, 2}<br><br>
+  >>> x.add(3)<br>
+  >>> x.add(3)<br>
+  >>> x.add(3)<br>
+  >>> x<br>
+  {1, 2, 3}
+</div>
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
