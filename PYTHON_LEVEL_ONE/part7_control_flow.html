@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<h2>Comparison operators</h2>
+# Greater than<br>
+1 > 2<br><br>
+# Less than<br>
+1 &lt; 2<br><br>
+# Equality<br>
+>>> 1 == 1<br>
+True<br>
+>>> 1 == "1"<br>
+False<br><br>
+# Inequality<br>
+>>> 1 != 2<br>
+True<br><br>
+<h2>Logical operators</h2>
+<li>AND</li>
+<li>OR</li>
+<h2>IF statement</h2>
+<pre>
+if 1 < 2:
+    print("First Block")
+    if 20 < 3:
+        print("Second Block")
+
+>>>
+First Block
+</pre>
+<h2>IF/ELSE statments</h2>
+<pre>
+if 1 &lt; 2:
+    print("hello")
+elif 3 == 3:
+  print("elif ran")
+else:
+    print("last")
+</pre>
+
+<h2>FOR Loops</h2>
+<pre>seq = [1, 2, 3, 4, 5, 6]
+
+for item in seq:
+    print(item)
+>>>
+1
+2
+3
+4
+5
+6
+
+d = {'Sam': 1, 'Frank': 2, 'Dan': 3}
+
+for item in d:
+    print(item)
+>>>
+Sam
+Frank
+Dan
+
+for k in d:
+    print(k)
+    print(d[k])
+>>>
+1
+Frank
+2
+Dan
+3
+
+mypairs = [(1, 2), (3, 4), (5, 6)]
+
+for (tup1, tup2) in mypairs:
+    print(tup2)
+    print(tup1)
+>>>
+2
+1
+4
+3
+6
+5
+</pre>
+<h2>WHILE Loops</h2>
+<pre>
+  i = 1
+
+  while i < 5:
+      print('i is: {}'.format(i))
+      i = i+1
+>>>
+i is: 1
+i is: 2
+i is: 3
+i is: 4
+</pre>
+
+<h2>Range</h2>
+<pre>
+y = list(range(0, 5))
+print(y)
+
+x = list(range(0, 20, 2))
+print(x)
+>>>
+[0, 1, 2, 3, 4]
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+</pre>
+<h2>List Comprehension</h2>
+<pre>
+x = [1, 2, 3, 4]
+out = []
+for num in x:
+    out.append(num**2)
+print(out)
+
+comprehension = [num**2 for num in x]
+print(comprehension)
+>>>
+[1, 4, 9, 16]
+[1, 4, 9, 16]
+</pre>
+
+<h3><a href="/">Go to main menu</a></h3>
+  </body>
+</html>
