@@ -16,6 +16,55 @@ def my_func(param1='default'):<br>
 &nbsp;&nbsp;&nbsp;&nbsp;print('my first python function! {}'.format(param1))<br><br>
 >>>my_func()<br>
 >>>my first python function! default
+</div><br>
+<div class="code1">
+  def addNum(num1,num2):<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;    if type(num1) == type(num2)==type(10):<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        return num1+num2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;      else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          return "Sorry, I need integers!"<br>
+  <br>
+  result = addNum('2',3)<br>
+  print(result)<br><br>
+  >>> Sorry, I need integers!
 </div>
+<h3>Filter</h3>
+In next example we create function using "filter". Filter construct an iterator from those elements of iterable for which function returns true.<br>
+<strong>filter(function, iterable)</strong><br><br>
+Note that <i>filter(function, iterable)</i> is equivalent to the generator expression <i>(item for item in iterable if function(item))</i><br><br>
+<div class="code1">
+# Filter<br>
+mylist = [1,2,3,4,5,6,7,8]<br>
+def even_bool(num):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;    return num%2 == 0<br><br>
+
+evens = filter(even_bool, mylist)<br>
+print (evens)<br>
+print (list(evens))<br><br>
+>>> &lt;filter object at 0x000001DAE51B6348&gt;<br>
+>>> [2, 4, 6, 8]
+</div>
+<h3>Lambda expression</h3>
+Lambda expression has no name and can be writes at one line<br><br>
+<div class="code1">
+  # Lambda<br>
+  mylist = [1,2,3,4,5,6,7,8]<br>
+  # def even_bool(num):<br>
+  # &nbsp;&nbsp;&nbsp;&nbsp;    return num%2 == 0<br><br>
+
+  evens = filter(lambda num: num%2 == 0, mylist)<br>
+  print (list(evens))<br><br>
+  >>> [2, 4, 6, 8]
+</div>
+Some examples of using methods:
+<div class="code1">
+tweet = 'Go Sports! #Sports'<br>
+print (tweet.split('#'))<br><br>
+>>> ['Go Sports! ', 'Sports']
+<br><br><Br>
+print('x' in [1,2,3])<br><br>
+>>> False
+</div>
+<h3><a href="/">Go to main menu</a></h3>
   </body>
 </html>
