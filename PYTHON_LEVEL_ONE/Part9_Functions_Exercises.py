@@ -72,10 +72,39 @@ def stringBits(str):
 #
 # end_other('Hiabc', 'abc') → True
 # end_other('AbC', 'HiaBc') → True
-# end_other('abc', 'abXabc') → True
-
+# end_other('sdfeSSeDabc', 'SSeDabc') → True
+# end_other('asdfjk', 'asdfjk')
+import pdb
 
 def end_other(a, b):
+    if a.lower() == b.lower():
+            print('True')
+    elif len(a)>len(b):
+        i = -1
+        z = False
+        while i >= -(len(b)):
+            if a.lower()[i] == b.lower()[i]:
+                print (a.lower()[i])
+                print (b.lower()[i])
+                z = True
+                i = i-1
+            else:
+                z = False
+                break
+        print(z)
+    else:
+        i = -1
+        z = False
+        while i >= -(len(a)):
+            if a.lower()[i] == b.lower()[i]:
+                print (a.lower()[i])
+                print (b.lower()[i])
+                z = True
+                i = i-1
+            else:
+                z = False
+                break
+        print(z)
   # CODE GOES HERE
 
 #####################
@@ -90,6 +119,10 @@ def end_other(a, b):
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
 def doubleChar(str):
+    result = ''
+    for i in str:
+        result = result+2*i
+    print(result)
   # CODE GOES HERE
 
 
@@ -115,8 +148,13 @@ def doubleChar(str):
 # no_teen_sum(2, 1, 14) → 3
 
 def no_teen_sum(a, b, c):
+    print(fix_teen(a)+fix_teen(b)+fix_teen(c))
   # CODE GOES HERE
 def fix_teen(n):
+    if 13 <= n <15 or 17 <= n <=19:
+        n = 0
+        return(n)
+    else: return(n)
   # CODE GOES HERE
 
 #####################
@@ -132,4 +170,8 @@ def fix_teen(n):
 # count_evens([1, 3, 5]) → 0
 
 def count_evens(nums):
+    result = 0
+    for i in nums:
+        if i%2 == 0: result = result +1
+    print(result)
   # CODE GOES HERE
