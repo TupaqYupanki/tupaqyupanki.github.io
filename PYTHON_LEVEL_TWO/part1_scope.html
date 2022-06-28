@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+Python Scope have LEGB Rule:
+<ul>
+    <li>Local</li>
+    <li>Enclosing Function locals</li>
+    <li>Global</li>
+    <li>Built-in</li>
+</ul>
+This rule detremine order in which python looks up variables when you calling it
+<h3>Local</h3>
+Names assigned in any way within a function (def or lambda), and not declared global in that function.
+<h3>EFLs</h3>
+Name in the local scope of any and all enclosing functions (def or lambda), from inner to outer
+<h3>Global</h3>
+Names assigned at the top-level of a module file, or declared global in a def within the file.
+<h3> Built-in (Python)</h3>
+Names preassigned in the built-in names module: <em>open, range, SyntaxError, ...</em>
+</body>
+</html>
