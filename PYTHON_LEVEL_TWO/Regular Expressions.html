@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular Expressions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>Regular Expressions allow us to search for patterns in Python strings</h3>
+Basic RE method is <b>re.search(pattern,text)</b> where pattern is part of text that we need to match. This method return by default True or False, but also contain information about where match starts and end.<br>
+<strong>match = re.search('term1',text)</strong><br>
+<b>match.start()</b> - return index position where match found<br><br>
+Another basic method is <strong>re.split(split_pattern,text)</strong><br>
+<div class="code1">
+    split_term = "@"<br>
+    email = 'user@gmail.com<br>
+    print(re.split(split_term,email))<br><br>
+    >>>['user', 'gmail.com']
+</div>
+<br><br>
+<div class="code1">
+def multi_re_find(patterns,phrase):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;for pat in patterns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('Searching for patterns {}'.format(pat))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(re.findall(pat,phrase))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('\n')<br><br>
+
+test_phrase = 'sdsd..sssddd..ssdsd?sdsd... dds..dssss1123s .#ssdddd!dd....ddss...ss'<br><br>
+
+test_patterns = ['sd*', 'sd+', 'sd?', 'sd{2}', 's[sd]+', '[^?.!]+', '[a-z]+', r'\d+', r'\s+', r'\w+']<br>
+#* means 0 or more match<br>
+#+ means 1 or more match<br>
+#? means 0 or 1 match<br>
+#{x} looking for x time match, also can be like {1,3} - 1-3 match<br>
+#[sd] means s or d<br>
+#^ - exclude some patterns in our example [a-z] do the same<br>
+#r'\d' - find digits in string of text; \D - non digits<br>
+#r'\s' - find spaces; \S - non spaces<br>
+#r'\w' - alphabet and numeric symbols<br><br><br>
+>>>Searching for patterns sd*<br>
+>>>['sd', 'sd', 's', 's', 'sddd', 's', 'sd', 'sd', 'sd', 'sd', 's', 's', 's', 's', 's', 's', 's', 'sdddd', 's', 's', 's', 's']<br><br>
+
+>>>Searching for patterns sd+<br>
+>>>['sd', 'sd', 'sddd', 'sd', 'sd', 'sd', 'sd', 'sdddd']<br><br>
+
+>>>Searching for patterns sd?<br>
+>>>['sd', 'sd', 's', 's', 'sd', 's', 'sd', 'sd', 'sd', 'sd', 's', 's', 's', 's', 's', 's', 's', 'sd', 's', 's', 's', 's']<br><br>
+
+>>>Searching for patterns sd{2}<br>
+>>>['sdd', 'sdd']<br><br>
+
+>>>Searching for patterns s[sd]+<br>
+>>>['sdsd', 'sssddd', 'ssdsd', 'sdsd', 'ssss', 'ssdddd', 'ss', 'ss']<br><br>
+
+>>>Searching for patterns [^?.!]+<br>
+>>>['sdsd', 'sssddd', 'ssdsd', 'sdsd', ' dds', 'dssss1123s ', '#ssdddd', 'dd', 'ddss', 'ss']<br><br>
+
+>>>Searching for patterns [a-z]+<br>
+>>>['sdsd', 'sssddd', 'ssdsd', 'sdsd', 'dds', 'dssss', 's', 'ssdddd', 'dd', 'ddss', 'ss']<br><br>
+
+>>>Searching for patterns \d+<br>
+>>>['1123']<br><br>
+
+>>>Searching for patterns \s+<br>
+>>>[' ', ' ']<br><br>
+
+>>>Searching for patterns \w+<br>
+>>>['sdsd', 'sssddd', 'ssdsd', 'sdsd', 'dds', 'dssss1123s', 'ssdddd', 'dd', 'ddss', 'ss']<br><br>
+</div>
+
+<h3><a href="/">Go to main menu</a></h3>
+</body>
+</html>
