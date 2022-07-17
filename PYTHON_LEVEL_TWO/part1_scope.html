@@ -22,5 +22,21 @@ Name in the local scope of any and all enclosing functions (def or lambda), from
 Names assigned at the top-level of a module file, or declared global in a def within the file.
 <h3> Built-in (Python)</h3>
 Names preassigned in the built-in names module: <em>open, range, SyntaxError, ...</em>
+<br>
+To reach global variables from function you can use <strong>global</strong>
+<div class="code1">
+    x = 50<br><br>
+
+    def func():<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;global x<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;x = 1000<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return x<br><br>
+    print("before function call, x is: ",x)<br>
+    func()<br>
+    print("after function call, x is: ",x)<br><br>
+    >>> before function call, x is: 50<br>
+    >>> after function call, x is: 1000
+</div>
+<h3><a href="/">Go to main menu</a></h3>
 </body>
 </html>
