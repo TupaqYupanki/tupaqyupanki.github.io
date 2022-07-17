@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Errors and Exceptions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+We can use these keywords:
+<ul>
+    <li>Try</li>
+    <li>Except</li>
+    <li>Finally</li>
+</ul>
+Basic syntax:<br><br>
+<b>try</b>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;You do your operations here<br>
+<strong>except</strong> Exception1:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If there is Exception1, then execute this block<br>
+<strong>except</strong> Exception2:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If there is Exception2, then execute this block<br>
+<strong>else</strong>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If ther is no exception then execute this block<br><br>
+<div class="code1">
+try:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f = open('simple.txt','w')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f.write('Test write to simple text')<br>
+except IOError:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print('ERROR: COULD NOT FIND FILE OR READ DATA')<br>
+else:
+&nbsp;&nbsp;&nbsp;&nbsp;print('SUCCESS')<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f.close()<br>
+print('hello world')
+</div>
+In this example if something went wrong and our program can't open file or write data to it the program wouldn't crash and continue performing the code
+<h3><a href="/">Go to main menu</a></h3>
+</body>
+</html>
