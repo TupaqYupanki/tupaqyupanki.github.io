@@ -1,0 +1,42 @@
+body{
+  font-size: 20px;
+}
+  .comment{
+    background: #8080801f;
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .code1{
+    background: #414141;
+    flex: auto;
+    width: fit-content;
+    color: white;
+    padding: 10px;
+  }
+
+    .jsfunc{
+      background: #414141;
+      width: 15%;;
+    color: #3db1e8;
+  }
+
+  .jsvalue{
+    background: #414141;
+    width: 15%;;
+    color: #c7ff7c;
+  }
+
+  .jsvar{
+    background: #414141;
+    width: 15%;;
+    color: #d767ea;
+  }
+
+  .jsnum{
+    background: #414141;
+    width: 15%;;
+    color: #ffb69b;
+  }

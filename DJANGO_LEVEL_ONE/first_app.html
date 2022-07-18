@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+After we created our first application let's configure it.<br>
+First we need to add our new application in project settings - <stron>settings.py</stron>.
+<ul>
+    <li>Adding in list <strong>INSTALLED_APPS</strong> name of our application</li>
+</ul>
+Then add some code in <stron>view.py</stron> in our app folder:
+<div class="code1">
+from django.http import HttpResponse<br>
+# Create your views here.<br><br>
+
+def index(request):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return HttpResponse("Hello World!")
+</div><br>
+After it change file <strong>urls.py</strong> in our project directory:
+<div class="code1">
+from first_app import views<br><br>
+
+urlpatterns = [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(r'^$', views.index, name='index'),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;url(r'^admin/', admin.site.urls),<br>
+]
+</div>
+
+
+<h3><a href="/">Go to main menu</a></h3>
+</body>
+</html>

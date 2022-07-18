@@ -6,13 +6,13 @@ class dog():
         self.sex = sex
 
 mydog = dog(breed = "Lab",name = "Sammy",sex = "male")
-anotherway = dog("pudel","Ann","female")
+otherdog = dog("pudel","Ann","female")
 
 print(mydog.breed)
 print(mydog.name)
 print(mydog.sex)
-print(anotherway.breed, anotherway.name, anotherway.sex)
-print(anotherway.species)
+print(otherdog.breed, otherdog.name, otherdog.sex)
+print(otherdog.species)
 
 class Circle():
     pi = 3.14

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+For working with Django recommended use venv. In this project we will work with Anaconda env. To create new venv use this command:<br>
+<strong>conda create --name myDjangoEnv python=3.5.4 django=1.11.8</strong><br>
+By default Anaconda installing the latest version of package.<br><br>
+To create new Django project use command <strong>django-admin startproject first_project</strong><br>
+Python create folder with name of your Django project in root directory with some init files.<br>
+<h3>__init__.py</h3>
+This is a blank Python script that let's Python konw that this directory can be treated as a package
+<h3>urls.py</h3>
+This is a Python script that will stor all the URL patterns for your project.Basically the different pages of your web application.
+<h3>wsgi.py</h3>
+This is a Python script that acts as the Web Server Gateway Interface.It will later on help us deploy our web app to production.
+<h3>manage.py</h3>
+This is a Python script that we will use a lot. It will be associates with many commands as we build our web app!<br>
+<p>When we run <strong>python manage.py runserver</strong> we start our webserver with initial page that can be reached by http://localhost:8000</p>
+<p>Django project consists of applications that perform a particular functionality and can be reused.</p>
+<p>To create some application use command <strong>python manage.py startapp first_app</strong>. This command also create new directory with files.</p>
+<h3>admin.py</h3>
+In this file you can register your models which Django will then use them with Django's admin interface
+<h3>apps.py</h3>
+Here you can place application specific configurations
+<h3>models.py</h3>
+Here you store the application's data models
+<h3>tests.py</h3>
+Here you can store test functions to test your code
+<h3>views.py</h3>
+This is where you have functions that handle requests and return responses
+<h3>Migrations folder</h3>
+This directory stores database specific information as it relates to the models
+
+<h3><a href="/">Go to main menu</a></h3>
+</body>
+</html>
