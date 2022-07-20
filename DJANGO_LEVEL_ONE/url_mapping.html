@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Mapping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+Django has function <strong>include()</strong> in <strong>django.conf.urls</strong>.<br>
+This function allows us to look for a match with regexp and link back to our application's own urls.py file<br>
+We need to add this code to our urls.py:
+<div class="code1">
+    from django.conf.urls import include<br>
+    urlpatterns = [...<br>
+    url(r'^first_app/',include('first_app.urls')),<br>
+    ...]
+</div><br>
+It allow us to look for any url that has the pattern:
+<ul>
+    <li>www.domainname.com/first_app/...</li>
+</ul>
+If we match that pattern, the include() function basically tells Django to go look at the urls.py file inside of first_app folder. So we have to create this <strong>urls.py</strong> file in application's directory.<br>
+In that file we need to add this code:
+<div class="code1">
+from django.conf.urls import url<br>
+from first_app import views<br><br>
+
+urlpatterns = [<br>
+    url(r'^$', views.index, name='index'),<br>
+]
+</div><br>
+And now we can reach our page by link http://localhost:8000/<b>first_app</b><br>
+If we will change string url(r'^<strong>first_app/</strong>',include('first_app.urls')), to url(r'^<strong>mynewextension/</strong>',include('first_app.urls')), the page will be reached by http://localhost:8000/<b>mynewextension</b>
+
+<h3><a href="/">Go to main menu</a></h3>
+</body>
+</html>
