@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Templates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+The template contains the static parts of an html page (parts that are always the same).<br>
+We have template tags, which have their own special syntax that allows you to inject dynamic content.
+<p>First you need to create a templates directory and then a subdirectory for each specific app's templates. It saved in top level directory of your project:</p>
+<li>first_project/templates/first_app</li>
+To let know Django about templates we need to edit DIR key inside of TEMPLATES dictionary in the settings.py.
+<p>To dynamically generate correct file path string use Python's os module</p>
+We will use this os module to feed the path to the DIR key inside of the TEMPLATES dictionary<br><br>
+In settings.py we have a variable <strong>BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))</strong> that contains path to our project's directory<br>
+Well to join our templates directory to the project we need to add this string in settings.py: <strong>TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")</strong>.<br>
+Below we have to find variable TEMPLATES and add our new variable "TEMPLATE_DIR" in <b>'DIRS': [TEMPLATE_DIR,],</b><br><br>
+After it we can create index.html file in new directory "templates" with common html code inside. Adding some template's tag inside HTML code: {{ insert_me }}<br>
+Than inside our application directory changing views.py:
+<div class="code1">
+def index(request):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;my_dict = {'insert_me':'Hello I am from view.py!'}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return render(request,'index.html',context=my_dict)
+</div>
+Now if we will update the page we saw our page, from our template/index.html and string inside this page from view.py: 'Hello I am from view.py!'
+
+<h3><a href="/">Go to main menu</a></h3>
+</body>
+</html>
