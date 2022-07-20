@@ -24,7 +24,7 @@ After it change file <strong>urls.py</strong> in our project directory:
 from first_app import views<br><br>
 
 urlpatterns = [<br>
-&nbsp;&nbsp;&nbsp;&nbsp;(r'^$', views.index, name='index'),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;url(r'^$', views.index, name='index'),<br>
 &nbsp;&nbsp;&nbsp;&nbsp;url(r'^admin/', admin.site.urls),<br>
 ]
 </div>
