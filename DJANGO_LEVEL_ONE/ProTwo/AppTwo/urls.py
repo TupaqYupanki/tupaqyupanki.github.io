@@ -14,13 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django.contrib import admin
-from django.conf.urls import include
 from AppTwo import views
 
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^admin/', admin.site.urls),
-    url(r'^help/', include('AppTwo.urls')),
 ]
