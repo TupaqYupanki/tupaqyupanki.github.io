@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <title>Static Files</title>
 </head>
 <body>
 To add some media files to your page you can use static files.<br>
 First, you need to create new directory inside your project called <strong>static</strong><br>
-Then need to add this directory path to the project's settings.py file. We will aslo add a STATIC_URL variable<br>
+Then need to add this directory path to the project's settings.py file:<br>
+<strong>STATIC_DIR = os.path.join(BASE_DIR,"static")</strong><br><br>
+We will also add a STATIC_URL variable:<br>
+<strong>STATICFILES_DIRS = [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;STATIC_DIR,<br>
+]<br><br>
+</strong>
 After that we create <strong>images</strong> directory inside of <strong>static</strong> and can place our image files here.<br>
-Now we can go to 127.0.0.1:8000/static/images/pict.jpg and check that it works.
+Now we can go to 127.0.0.1:8000/static/images/pict.jpg and check that it works.<br><br>
+To add this media file to HTML we need to add specific tags at the top (under &lt;html&gt; tag):<br>
+<strong>{% load staticfiles %}</strong><br><br>
+Then we want to insert the image with an HTML <strong>&lt;img src= &gt;</strong> style tag using:<br>
+<strong>&lt;img src={% static "images/pic.jpg" %}/&gt;</strong><br><br>
+Also we can add CSS file in static field:<br>
+Create new directory named css, add in this directory some css file, for example "mystyle.css".<br>
+Than we need to add in our html file link to it:<br>
+Inside &lt;head&gt; tag add <strong>&lt;link rel="stylesheet" href= '{% static "css/mystyle.css"%}'&gt;</strong>
+
+
+<h3><a href="/">Go to main menu</a></h3>
 </body>
 </html>
