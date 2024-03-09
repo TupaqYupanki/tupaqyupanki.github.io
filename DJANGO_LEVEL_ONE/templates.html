@@ -16,7 +16,8 @@ We will use this os module to feed the path to the DIR key inside of the TEMPLAT
 In settings.py we have a variable <strong>BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))</strong> that contains path to our project's directory<br>
 Well to join our templates directory to the project we need to add this string in settings.py: <strong>TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")</strong>.<br>
 Below we have to find variable TEMPLATES and add our new variable "TEMPLATE_DIR" in <b>'DIRS': [TEMPLATE_DIR,],</b><br><br>
-After it we can create index.html file in new directory "templates" with common html code inside. Adding some template's tag inside HTML code: {{ insert_me }}<br>
+After it we can create index.html file in new directory "templates" with common html code inside. <br>
+Now we can add som "dynamic" part inside our HTML - adding some template's tag inside HTML code: <strong>{{ insert_me }}</strong><br>
 Than inside our application directory changing views.py:
 <div class="code1">
 def index(request):<br>
