@@ -7,6 +7,43 @@
 </head>
 
 <body>
+    Models is the way to incoporate a database into a Django Project.<br>
+    To add database to your project we need to fill file <strong>models.py</strong>:
+    <div class="code1">
+        from django.db import models<br><br>
+        class Topic(models.Model):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;top_name = models.CharField(max_length=264,unique=True)<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.top_name<br><br>
+        class Webpage(models.Model):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;topic = models.ForeignKey(Topic)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;name = models.CharField(max_length=264,unique=True)<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;url = models.URLField(unique=True)<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;def __str__(self):<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return self.name<br><br>
+        </div>
+    After that we need to say: <strong>python manage.py migrate</strong> and than <strong>python manage.py makemigrations first_app</strong> and again <strong>python manage.py migrate</strong><br>
+    To interact with your database you can do it from shell:<br><br>
+    <strong>python manage.py shell</strong><br>
+    <div class="code1">
+        >>> from first_app.models import Topic<br>
+        >>> print(Topic.objects.all())<br>
+        <QuerySet []>
+        >>> t = Topic(top_name="Social Network")<br>
+        >>> t.save()<br>
+        >>> print(Topic.objects.all())<br>
+        &lt;QuerySet [&lt;Topic: Social Network&gt;]&gt;    
+    </div>
+    Another way - interact through admin interface.<br>
+    For that we need to change <strong>admin.py</strong> file:<br><br>
+    <div class="code1">
+        from first_app.models import AccessRecord,Topic,Webpage<br><br>
+        admin.site.register(AccessRecord)<br>
+        admin.site.register(Topic)<br>
+        admin.site.register(Webpage)
+    </div>
+    Than we need to apply it:<br>
+    First, create admin user: <strong>python manage.py createsuperuser</strong>
 
     <h3><a href="/">Go to main menu</a></h3>
 </body>
